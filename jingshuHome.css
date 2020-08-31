@@ -49,28 +49,38 @@ body {
     margin-bottom: 250px;
     color: #493934;
 }
-.about {
+.startintro {
     background-color: white;
-    text-align: center;
-    position: relative;
     padding-top: 85px;
+    text-align: center;
+    display: flex;
+    justify-content: center;   
 }
+.about {
+    position: relative; 
+    width: 100px;
+    height: 200px;
+}   
 #bling {
     width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: absolute;
 }
 #hi {
     font-family: 'Satisfy', cursive;
     font-size: 50px;
     color: #de8585;
     position: absolute;
-    top: 53px;
-    right: 929px;
+    top: -26px;
+    right: 23px;
 }
 #intro3 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 28px;
     color: #de8585;
+    background-color: white;
+    margin-top: 0;
+    text-align: center;
 }
