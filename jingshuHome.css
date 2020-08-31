@@ -25,14 +25,12 @@ li {
     color: #a58a80;
     transition: color 0.5s;
 }
-.navbarlists>li>a:visited {
-    color: #a58a80;
-}
 .navbarlists>li>a:hover {
     color: #de8585;   
 }
 body {
     background-color: #f9dbd569;
+    margin: 0;
 }
 .intro {
     text-align: center;
@@ -48,5 +46,31 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 30px;
     margin-top: 0px;
+    margin-bottom: 250px;
     color: #493934;
+}
+.about {
+    background-color: white;
+    text-align: center;
+    position: relative;
+    padding-top: 85px;
+}
+#bling {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#hi {
+    font-family: 'Satisfy', cursive;
+    font-size: 50px;
+    color: #de8585;
+    position: absolute;
+    top: 53px;
+    right: 929px;
+}
+#intro3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+    color: #de8585;
 }
