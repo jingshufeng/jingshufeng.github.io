@@ -1,0 +1,52 @@
+.navigationbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fcf0ed;
+}
+#jingshulogo {
+    width: 153px;
+}
+ul {
+    font-size: 20px;
+    padding: 56px;
+}
+li {
+    list-style-type: none; 
+    display: inline;
+}
+.navbarlists>li>a {
+    text-decoration: none;
+    font-family: 'Gochi Hand', cursive;
+    margin: 25px;
+    font-size: 40px;
+    color: #a58a80;
+    transition: color 0.5s;
+}
+.navbarlists>li>a:visited {
+    color: #a58a80;
+}
+.navbarlists>li>a:hover {
+    color: #de8585;   
+}
+body {
+    background-color: #f9dbd569;
+}
+.intro {
+    text-align: center;
+    margin-top: 80px;
+}
+#intro1 {
+    font-family: 'Satisfy', cursive;
+    font-size: 95px;
+    margin-bottom: 0px;
+    color: #493934;
+}
+#intro2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    margin-top: 0px;
+    color: #493934;
+}
