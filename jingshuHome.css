@@ -78,9 +78,26 @@ body {
 }
 #intro3 {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 28px;
-    color: #de8585;
+    font-size: 24px;
+    color: #493934;
     background-color: white;
-    margin-top: 0;
+    margin-top: -60px;
+    margin-bottom: 0;
     text-align: center;
+    line-height: 43px;
+}
+footer {
+    height: 125px;
+}
+.logos {
+    width: 50px;
+}
+#footercontact {
+    width: 360px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#findme>a>img, #hireme>a>img {
+    margin: 10px;
 }
