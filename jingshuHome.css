@@ -101,3 +101,23 @@ footer {
 #findme>a>img, #hireme>a>img {
     margin: 10px;
 }
+#hiremeword {
+    text-decoration: none;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 26px;
+    color: #de8585;   
+}
+#findmeword {
+    text-align: center;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 26px;
+    color: #de8585;  
+    margin-top: 17px;
+}
+#copyrights {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #493934;
+}
