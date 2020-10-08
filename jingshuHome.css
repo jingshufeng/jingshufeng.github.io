@@ -1,18 +1,30 @@
 .navigationbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 200px;
     align-items: center;
     position: sticky;
     top: 0;
     background-color: #fcf0ed;
     z-index: 10;
+    height: 199px;
+    transition: all .5s;
+}
+.navigationbar.small {
+    height: 144px;
 }
 #jingshulogo {
     width: 153px;
 }
+.navigationbar.small>a>#jingshulogo {
+    width: 126px;
+}
 ul {
     font-size: 20px;
     padding: 56px;
+}
+.navigationbar.small>ul {
+   padding: 56px;
 }
 li {
     list-style-type: none; 
@@ -24,7 +36,7 @@ li {
     margin: 25px;
     font-size: 40px;
     color: #a58a80;
-    transition: color 0.5s;
+    transition: all 0.5s;
 }
 .navbarlists>li>a:hover {
     color: #de8585;   
