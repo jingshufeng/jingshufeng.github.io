@@ -1,0 +1,75 @@
+*{
+    margin: 0;  
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+#outerNav{
+    height: 115px;
+    padding: 47px;
+    display: flex;
+    justify-content: space-around;
+}
+#innerNavLeft>h1>a{
+    font-family: 'Cairo', sans-serif;
+    font-size: 47px;
+    color: black;
+}
+#innerNavRight{
+    display: flex;
+    align-items: center;
+}
+#innerNavRight>ul{
+    padding: 10px;
+    margin: 10px;
+}
+
+#innerNavRight>ul>li{
+    display: inline;
+    padding: 10px;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 27px;
+}
+#innerNavRight>ul>li>a{
+    color: black;
+}
+.fourSeasons{
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    overflow: hidden;
+}
+#spring{
+    background-color: #7878787a;
+}
+#summer{
+    background-color: #639244b8;
+}
+#fall{
+    background-color: #adddf6;
+}
+#winter{
+    background-color: #d3b7aa;
+}
+.fourSeasonsText{
+    width: 700px;
+    text-align: center;
+    padding: 100px;
+}
+.fourSeasonsText>a:hover{
+    color: white;
+}
+.fourSeasonsText>a{
+    font-size: 55px;
+    font-family: 'Permanent Marker', cursive;
+    color: #ffffff85;
+}
+.fourSeasonsImg{
+    opacity: 0.7;
+}
+.fourSeasonsImg:hover{
+    opacity: 1;
+}
