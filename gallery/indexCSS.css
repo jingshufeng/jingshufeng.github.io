@@ -58,6 +58,7 @@ li{
     width: 700px;
     text-align: center;
     padding: 100px;
+    flex: 1 5;
 }
 .fourSeasonsText>a:hover{
     color: white;
@@ -69,8 +70,13 @@ li{
 }
 .fourSeasonsImg{
     opacity: 0.7;
-    width: 60%;
+    width: 1100px;
     overflow: hidden;
+    flex: 5 1;
+}
+.fourSeasonsImg>a>img{
+    width: 100%;
+    min-width: 1300px;
 }
 .fourSeasonsImg:hover{
     opacity: 1;
