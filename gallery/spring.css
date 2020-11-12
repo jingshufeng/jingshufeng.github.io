@@ -80,3 +80,58 @@ li{
     bottom: 0;
     width: 100%;
 }
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 500px;
+    height: 100%;
+    background-color: #80808099;
+    display: none;
+}
+.visiable{
+    display: flex;
+    justify-content: center;
+    
+}
+.modalCloseBtn{
+    float: left;
+}
+#modalImg {
+    display:flex;
+}
+#modalImg>img{
+    max-width: 800px;
+    max-height: 100%;;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+}
+.modalCloseBtn{
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+}
+.modalCloseBtn:hover{
+    opacity: 1;
+}
+.modalCloseBtn:before, .modalCloseBtn:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+  }
+  .modalCloseBtn:before {
+    transform: rotate(45deg);
+  }
+  .modalCloseBtn:after {
+    transform: rotate(-45deg);
+  }
