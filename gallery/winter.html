@@ -28,27 +28,23 @@
             <div><a href="fall.html">Fall</a></div>
             <div class="highLight"><a href="winter.html">Winter</a></div>
         </div>
-        <div id="galleryContainer">
-            <div class="gallery">
-                <a href="101112\1012.png">
-                    <img src="101112\1012.png">
-                </a>
-                <div class="description"><a href="101112\1012.png">1012</a></div>
-            </div>
-            <div class="gallery">
-                <a href="101112\1024.png">
-                    <img src="101112\1024.png">
-                </a>
-                <div class="description"><a href="101112\1024.png">1014</a></div>
-            </div>
-        </div>
+        <div id="galleryContainer"></div>
     </div>
     <div class="modal">
         <div id="modalImg">
             <img src="">
         </div>
         <a class="modalCloseBtn" href="#"></a>
+        <div class="counter"></div>
+        <button class="paginate left"><i></i><i></i></button>
+        <button class="paginate right"><i></i><i></i></button>
     </div>
+    <script>
+        var images = [
+            ["101112/1012.png", "1012"],
+            ["101112/1024.png", "1024"]
+        ];
+    </script>
     <script src="modal.js"></script>
 </body>
 
