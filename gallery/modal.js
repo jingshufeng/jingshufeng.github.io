@@ -12,11 +12,11 @@ function getImagesHTML(img, description) {
 //创建一个变量用来保存所有的HTML
 var allHTML = "";
 //for循环来增加图片
-for (var i = 0; i < images.length; i++) {
+for (var i = 0; i < imgArr.length; i++) {
     //var image = images[i];
     //var img = image[0];
     //var description = image[1];
-    allHTML += getImagesHTML(images[i][0], images[i][1]);
+    allHTML += getImagesHTML(imgArr[i][0], imgArr[i][1]);
 }
 //修改原网页中的HTML
 var galleryContainer = document.getElementById("galleryContainer");
@@ -43,27 +43,52 @@ for (var i = 0; i < galleries.length; i++) {
         var imgSrc = this.getElementsByTagName("img")[0].getAttribute('src');
         modalImg.setAttribute("src", imgSrc);
         e.preventDefault();
+        index = findImg(imgSrc);
+        slide(0);
     };
 }
-
+//创建一个函数用来对比index是否相同
+function findImg(src) {
+    //var一个变量用来保存结果
+    var i;
+    for (i = 0; i < galleries.length; i++) {
+        if (src === imgArr[i][0]) {
+            break;
+        }
+    }
+    return i;
+};
 //首先获取两个按钮
 // basic paging logic to demo the buttons
-var pr = document.querySelector('.paginate.left');
-var pl = document.querySelector('.paginate.right');
+var pl = document.querySelector('.paginate.left');
+var pr = document.querySelector('.paginate.right');
 
-pr.onclick = slide.bind(this, -1);
-pl.onclick = slide.bind(this, 1);
 
-var index = 0, total = 5;
+pl.onclick = function (e) {
+    e.stopPropagation();
+    slide(-1);
+};
+
+
+pr.onclick = function (e) {
+    e.stopPropagation();
+    slide(1);
+};
+
+
+
+var index = 0, total = imgArr.length;
 
 function slide(offset) {
     index = Math.min(Math.max(index + offset, 0), total - 1);
 
     document.querySelector('.counter').innerHTML = (index + 1) + ' / ' + total;
 
-    pr.setAttribute('data-state', index === 0 ? 'disabled' : '');
-    pl.setAttribute('data-state', index === total - 1 ? 'disabled' : '');
+    pl.setAttribute('data-state', index === 0 ? 'disabled' : '');
+    pr.setAttribute('data-state', index === total - 1 ? 'disabled' : '');
+    modalImg.src = imgArr[index][0];
 }
 
 slide(0);
+
 
