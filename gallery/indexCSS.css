@@ -12,6 +12,15 @@ li{
     padding: 47px;
     display: flex;
     justify-content: space-around;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+    transition: all .5s ease;
+}
+#outerNav.small{
+    height: 88px;
+    padding: 10px 47px;
 }
 #innerNavLeft>h1>a{
     font-family: 'Cairo', sans-serif;
