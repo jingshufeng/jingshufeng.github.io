@@ -45,6 +45,7 @@ li{
   height: 70vh;
   background: white;
   font-size: 13px;
+  MARGIN: 0 15PX;
   flex-shrink: 0;
 }
 
