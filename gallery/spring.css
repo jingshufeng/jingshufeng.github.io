@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 *{
     margin: 0;  
 }
@@ -39,20 +40,57 @@ li{
 #bodyBigContainer{
     display: flex;
 }
-#verticalNav{
-    margin: 50px;
-    background-color:#b1afaf54;
+.sidebar {
+  width: 200px;;
+  height: 70vh;
+  background: white;
+  font-size: 13px;
+  flex-shrink: 0;
 }
-#verticalNav>div>a{
-    font-size: 50px;
-    font-family: 'Permanent Marker', cursive;
-    color: #000000a1;
+
+.nav {
+  position: relative;
+  text-align: right;
+  top: 120px;
+  transform: translateY(-31%);
+  font-weight: bold;
 }
-.highLight{
-    background-color: #bdbdbd;
+
+.nav ul {
+  list-style: none;
 }
-#verticalNav>div:hover{
-    background-color: #bdbdbd;
+.nav ul li {
+  position: relative;
+  margin: 3.2em 0;
+}
+.nav ul li a {
+  line-height: 5em;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.4em;
+  color: rgb(0 0 0 / 45%);
+  display: block;
+  transition: all ease-out 300ms;
+  font-size: 15px;
+}
+.nav ul li.active a {
+  color: #000000;
+}
+.nav ul li:not(.active)::after {
+  opacity: 0.2;
+}
+.nav ul li:not(.active):hover a {
+  color: black;
+}
+.nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #bcbbbf, #3c2533);
 }
 .gallery{
     margin: 20px;
