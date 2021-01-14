@@ -1,0 +1,6 @@
+body{
+    background-color: #8080801a;
+}
+#my-card-columns {
+    column-count: 7;
+}
